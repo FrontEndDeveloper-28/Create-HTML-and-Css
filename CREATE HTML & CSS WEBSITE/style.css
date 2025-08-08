@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    min-height: 100vh; /* Ensure the container always covers the viewport height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url(./image/live_article_top_10_highest_paying_computer_science_jobs_2022_39f5d1623d.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px 5%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.navbar h1 {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.navbar span {
+    color: orangered;
+}
+
+.navbar span:hover {
+    -webkit-text-stroke: 1px orangered;
+    color: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 10px 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 6px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar ul li .active {
+    background-color: orangered;
+    box-shadow: 0 0 10px orange;
+}
+
+.navbar ul li a:hover {
+    background-color: orangered;
+    box-shadow: 0 0 10px orange;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 0;
+    outline: 0;
+    color: aliceblue;
+    background-color: orangered;
+    border-radius: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: orange;
+    box-shadow: 0 0 10px orange;
+}
+
+.content {
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.content h2 {
+    color: aliceblue;
+    font-size: 40px;
+    margin-left: -550px;
+    margin-top: 100px;
+}
+
+.content span {
+    color: orangered;
+    font-weight: 900;
+}
+
+.content p {
+    color: aliceblue;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 20px 0;
+    text-align: center;
+    margin-left: -500px;
+}
+
+.common-btn {
+    width: 150px;
+    padding: 15px 0;
+    border: 0;
+    outline: 0;
+    background-color: orangered;
+    border-radius: 6px;
+    color: aliceblue;
+    font-size: 15px;
+    transition: 0.5s;
+    margin: 20px auto;
+    display: inline-block;
+    margin-left: -400px;
+}
+
+.common-btn:hover {
+    background-color: orange;
+    box-shadow: 0 0 10px orange;
+}
+
+.left-link-box {
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.media-links {
+    position: fixed;
+    bottom: 160px;
+    margin-left: 50px;
+}
+
+.media-links i {
+    display: block;
+    margin: 25px 0;
+    cursor: pointer;
+    color: silver;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.media-links i:hover {
+    color: chocolate;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #container {
+        padding: 20px 3%;
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .content h2 {
+        font-size: 32px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .common-btn {
+        width: 140px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 25px;
+    }
+
+    .navbar ul li a {
+        font-size: 13px;
+        padding: 8px 4px;
+    }
+
+    .content {
+        margin: 30px auto;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .common-btn {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .common-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
